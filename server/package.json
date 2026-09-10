@@ -1,0 +1,42 @@
+{
+  "name": "peoplepay360-server",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "node --watch src/app.js",
+    "start": "node src/app.js",
+    "seed": "node prisma/seed.js",
+    "db:migrate": "npx prisma migrate dev",
+    "db:push": "npx prisma db push",
+    "db:generate": "npx prisma generate",
+    "db:studio": "npx prisma studio",
+    "db:check": "node scripts/check-db.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "PeoplePay360 API Server - HR & Payroll Platform",
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mathjs": "^15.2.0",
+    "nodemailer": "^10.0.0",
+    "pdfkit": "^0.20.2",
+    "uuid": "^14.0.2",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "prisma": "^6.4.1"
+  }
+}

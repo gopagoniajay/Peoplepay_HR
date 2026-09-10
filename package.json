@@ -1,0 +1,21 @@
+{
+  "name": "peoplepay360",
+  "version": "1.0.0",
+  "description": "PeoplePay360 - Enterprise HR & Automated Payroll Platform",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix client run dev",
+    "dev": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run prisma:seed"
+  },
+  "keywords": [
+    "payroll",
+    "hrms",
+    "erp",
+    "enterprise"
+  ],
+  "author": "PeoplePay360 Team",
+  "license": "ISC"
+}
